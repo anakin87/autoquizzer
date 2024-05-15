@@ -179,7 +179,7 @@ URL_EXAMPLES = [
     "https://www.reuters.com/technology/microsoft-agreed-pay-inflection-650-mln-while-hiring-its-staff-information-2024-03-21/",
     "https://www.rainforest-alliance.org/species/capybara/",
     "https://en.wikipedia.org/wiki/Predator_(film)",
-    "https://lite.cnn.com/2024/04/22/entertainment/zendaya-challengers-in/index.html",
+    "https://lite.cnn.com/2024/04/22/entertainment/zendaya-challengers-interview/index.html",
     "https://en.wikipedia.org/wiki/The_Cure",
     "https://www.bloomberg.com/news/newsletters/2024-05-14/game-makers-at-midsummer-studios-look-to-take-on-the-sims",
     "https://www.rainforest-alliance.org/species/howler-monkey/",
