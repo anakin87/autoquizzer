@@ -11,7 +11,7 @@ pinned: true
 models: [meta-llama/Meta-Llama-3-8B-Instruct]
 ---
 
-# 🧑‍🏫 AutoQuizzer
+# 🧑‍🏫 AutoQuizzer &nbsp; [![HF Space](https://img.shields.io/badge/%F0%9F%A4%97-Live%20demo-blue.svg)](https://huggingface.co/spaces/deepset/autoquizzer)
 
 Generates a quiz from a URL. You can play the quiz, or let the LLM play it.
 
