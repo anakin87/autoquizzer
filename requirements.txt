@@ -1,4 +1,4 @@
-haystack-ai@git+https://github.com/deepset-ai/haystack@2428bc2a92c2cb97381523beb9662a14fe15e9b5
+haystack-ai==2.1.2
 trafilatura
 json-repair
 gradio
