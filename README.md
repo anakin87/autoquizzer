@@ -39,5 +39,6 @@ Built using: [🏗️ Haystack](https://haystack.deepset.ai/) • 🦙 Llama 3 8
 - Run the webapp: `gradio app.py`
 
 ## Customization and potential improvements
+- To not exceed the rate limits of Groq's free API, we truncate the text extracted from the URL to 4000 characters. This means that the generated quiz focuses on the beginning of the text. You can increase/remove this limit, taking into account the maximum context length of the model.
 - We are using the `OpenAIGenerator` to query Llama 3 on Groq. You can use an OpenAI model with the same generator. You can also use a different generator ([Haystack generators](https://docs.haystack.deepset.ai/docs/generators)).
 - In the quiz generation pipeline, we ask the model to generate a JSON. Llama-3-8B-Instruct usually works. You can also create a more robust JSON generation pipeline, as shown in this tutorial: [Generating Structured Output with Loop-Based Auto-Correction](https://haystack.deepset.ai/tutorials/28_structured_output_with_loop).
