@@ -8,6 +8,7 @@ sdk_version: 4.31.1
 app_file: app.py
 header: mini
 pinned: true
+short_description: Generate a quiz, play or let 🦙 LLM play
 models: [meta-llama/Meta-Llama-3-8B-Instruct]
 ---
 
