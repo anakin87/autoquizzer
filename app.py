@@ -181,7 +181,7 @@ URL_EXAMPLES = [
     "https://en.wikipedia.org/wiki/Predator_(film)",
     "https://lite.cnn.com/2024/04/22/entertainment/zendaya-challengers-interview/index.html",
     "https://en.wikipedia.org/wiki/The_Cure",
-    "https://www.bloomberg.com/news/newsletters/2024-05-14/game-makers-at-midsummer-studios-look-to-take-on-the-sims",
+    "https://en.wikipedia.org/wiki/Masters_of_Doom",
     "https://www.rainforest-alliance.org/species/howler-monkey/",
 ]
 
