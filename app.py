@@ -176,13 +176,13 @@ HEADER = """
 """
 
 URL_EXAMPLES = [
-    "https://www.reuters.com/technology/microsoft-agreed-pay-inflection-650-mln-while-hiring-its-staff-information-2024-03-21/",
     "https://www.rainforest-alliance.org/species/capybara/",
     "https://en.wikipedia.org/wiki/Predator_(film)",
     "https://lite.cnn.com/2024/04/22/entertainment/zendaya-challengers-interview/index.html",
     "https://en.wikipedia.org/wiki/The_Cure",
     "https://en.wikipedia.org/wiki/Masters_of_Doom",
     "https://www.rainforest-alliance.org/species/howler-monkey/",
+    "https://lite.cnn.com/2024/05/23/travel/star-wars-hotel-disney-jenny-nicholson-cec/index.html"
 ]
 
 with open("README.md", "r") as fin:
