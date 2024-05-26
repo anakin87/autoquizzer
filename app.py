@@ -220,7 +220,7 @@ with gr.Blocks(
             with gr.Row():
                 url = gr.Textbox(
                     label="URL from which to generate a quiz",
-                    value=examples_to_show[0],
+                    value=examples_to_show.value[0],
                     interactive=True,
                     max_lines=1,
                 )
@@ -229,7 +229,7 @@ with gr.Blocks(
                 )
 
             examples = gr.Examples(
-                examples=examples_to_show,
+                examples=examples_to_show.value,
                 inputs=[url],
                 label=["Example URLs"],
             )
