@@ -199,6 +199,7 @@ URL_EXAMPLES = [
     "https://lite.cnn.com/2024/05/13/tech/openai-altman-new-ai-model-gpt-4o/index.html",
 ]
 
+examples_to_show = [URL_EXAMPLES[0]] + random.sample(URL_EXAMPLES[1:], 6)
 
 with open("README.md", "r") as fin:
     info_md = (
@@ -213,14 +214,12 @@ with gr.Blocks(
 ) as demo:
     gr.Markdown(HEADER)
     quiz = gr.State({})
-    examples_to_show = gr.State(random.sample(URL_EXAMPLES, 5))
-
     with gr.Tabs() as tabs:
         with gr.TabItem("Generate quiz and play"):
             with gr.Row():
                 url = gr.Textbox(
                     label="URL from which to generate a quiz",
-                    value=examples_to_show.value[0],
+                    value=examples_to_show[0],
                     interactive=True,
                     max_lines=1,
                 )
@@ -229,7 +228,7 @@ with gr.Blocks(
                 )
 
             examples = gr.Examples(
-                examples=examples_to_show.value,
+                examples=examples_to_show,
                 inputs=[url],
                 label=["Example URLs"],
             )
