@@ -1,4 +1,5 @@
 import gradio as gr
+import random
 from backend.utils import (
     generate_quiz,
     get_closed_book_answers,
@@ -182,8 +183,23 @@ URL_EXAMPLES = [
     "https://en.wikipedia.org/wiki/The_Cure",
     "https://en.wikipedia.org/wiki/Masters_of_Doom",
     "https://www.rainforest-alliance.org/species/howler-monkey/",
-    "https://lite.cnn.com/2024/05/23/travel/star-wars-hotel-disney-jenny-nicholson-cec/index.html"
+    "https://lite.cnn.com/2024/05/23/travel/star-wars-hotel-disney-jenny-nicholson-cec/index.html",
+    "https://en.wikipedia.org/wiki/Indiana_Jones_(character)",
+    "https://www.rainforest-alliance.org/species/river-dolphin/",
+    "https://www.rainforest-alliance.org/species/sloth/",
+    "https://www.rainforest-alliance.org/species/honduran-bat/",
+    "https://en.wikipedia.org/wiki/Joel_Breman",
+    "https://en.wikipedia.org/wiki/Neffa",
+    "https://lite.cnn.com/2024/05/25/us/primate-escape-walterboro-south-carolina/index.html",
+    "https://en.wikipedia.org/wiki/John_McCain",
+    "https://lite.cnn.com/2024/05/17/tech/neuralink-trial-participant-elon-musk-noland-arbaugh/index.html",
+    "https://lite.cnn.com/2024/05/17/tech/ai-high-school/index.html",
+    "https://en.wikipedia.org/wiki/Drake%E2%80%93Kendrick_Lamar_feud",
+    "https://en.wikipedia.org/wiki/Fiat_Panda",
+    "https://lite.cnn.com/2024/05/13/tech/openai-altman-new-ai-model-gpt-4o/index.html",
 ]
+
+examples_to_show = random.sample(URL_EXAMPLES, 5)
 
 with open("README.md", "r") as fin:
     info_md = (
@@ -203,7 +219,7 @@ with gr.Blocks(
             with gr.Row():
                 url = gr.Textbox(
                     label="URL from which to generate a quiz",
-                    value=URL_EXAMPLES[0],
+                    value=examples_to_show[0],
                     interactive=True,
                     max_lines=1,
                 )
@@ -212,7 +228,7 @@ with gr.Blocks(
                 )
 
             examples = gr.Examples(
-                examples=URL_EXAMPLES,
+                examples=examples_to_show,
                 inputs=[url],
                 label=["Example URLs"],
             )
