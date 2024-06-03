@@ -1,4 +1,5 @@
-from .custom_components import TrafilaturaHTMLConverter, QuizParser
+from .custom_components import QuizParser
+from haystack.components.converters import HTMLToDocument
 from haystack.components.fetchers import LinkContentFetcher
 from haystack.components.generators import OpenAIGenerator
 from haystack.components.builders import PromptBuilder
@@ -37,7 +38,7 @@ text:
 
 quiz_generation_pipeline = Pipeline()
 quiz_generation_pipeline.add_component("link_content_fetcher", LinkContentFetcher())
-quiz_generation_pipeline.add_component("html_converter", TrafilaturaHTMLConverter())
+quiz_generation_pipeline.add_component("html_converter", HTMLToDocument())
 quiz_generation_pipeline.add_component(
     "prompt_builder", PromptBuilder(template=quiz_generation_template)
 )

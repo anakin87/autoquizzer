@@ -1,4 +1,3 @@
-haystack-ai==2.1.2
-trafilatura
+haystack-ai==2.2.0
 json-repair
 gradio
