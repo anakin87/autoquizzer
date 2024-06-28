@@ -172,7 +172,7 @@ HEADER = """
 <div align="center">
   <p style="font-size: 44px;">🧑‍🏫 AutoQuizzer</p>
   <p style="font-size: 25px;">AutoQuizzer generates a quiz from a URL. You can play the quiz, or let the LLM play it.</p>
-  <p style="font-size: 20px;"><b>Built using: <a href="https://haystack.deepset.ai/">🏗️ Haystack</a> • 🦙 Llama 3 8B Instruct • ⚡ Groq</b></p>
+  <p style="font-size: 20px;"><b><a href="https://www.youtube.com/watch?v=C1oJ1ArYYZA)">🎬 Project walkthrough video</a> - Built using: <a href="https://haystack.deepset.ai/">🏗️ Haystack</a> • 🦙 Llama 3 8B Instruct • ⚡ Groq</b></p>
 </div>
 """
 

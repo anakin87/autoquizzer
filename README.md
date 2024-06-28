@@ -22,6 +22,8 @@ Built using: [🏗️ Haystack](https://haystack.deepset.ai/) • 🦙 Llama 3 8
 
 ## How does it work?
 
+🎬 [**Project walkthrough video**](https://www.youtube.com/watch?v=C1oJ1ArYYZA)
+
 ![AutoQuizzer](autoquizzer.png)
 
 - **Quiz generation Pipeline**: downloads HTML content from the URL, extracts the text and passes it to Llama 3 to generate a quiz in JSON format.
