@@ -47,7 +47,7 @@ quiz_generation_pipeline.add_component(
     OpenAIGenerator(
         api_key=Secret.from_env_var("GROQ_API_KEY"),
         api_base_url="https://api.groq.com/openai/v1",
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         generation_kwargs={"max_tokens": 1000, "temperature": 0.5, "top_p": 1},
     ),
 )
@@ -83,7 +83,7 @@ closed_book_answer_pipeline.add_component(
     OpenAIGenerator(
         api_key=Secret.from_env_var("GROQ_API_KEY"),
         api_base_url="https://api.groq.com/openai/v1",
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         generation_kwargs={"max_tokens": 5, "temperature": 0, "top_p": 1},
     ),
 )
@@ -119,7 +119,7 @@ web_rag_pipeline.add_component(
     OpenAIGenerator(
         api_key=Secret.from_env_var("GROQ_API_KEY"),
         api_base_url="https://api.groq.com/openai/v1",
-        model="llama3-8b-8192",
+        model="llama-3.1-8b-instant",
         generation_kwargs={"max_tokens": 5, "temperature": 0, "top_p": 1},
     ),
 )
