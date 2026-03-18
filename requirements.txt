@@ -1,4 +1,4 @@
 haystack-ai==2.25.2
 trafilatura
 json-repair
-gradio
+gradio<6.0.0

@@ -4,7 +4,7 @@ emoji: 🧑‍🏫
 colorFrom: purple
 colorTo: blue
 sdk: gradio
-sdk_version: 6.9.0
+sdk_version: 5.50.0
 app_file: app.py
 header: mini
 pinned: true
