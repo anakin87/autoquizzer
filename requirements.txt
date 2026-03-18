@@ -1,3 +1,4 @@
 haystack-ai==2.2.0
 json-repair
 gradio==4.31.1
+audioop-lts
