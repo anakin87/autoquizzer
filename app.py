@@ -209,7 +209,9 @@ with open("README.md", "r") as fin:
     )
 
 
-with gr.Blocks() as demo:
+with gr.Blocks(
+    theme=gr.themes.Soft(primary_hue="sky"), css="footer{display:none !important}"
+) as demo:
     gr.Markdown(HEADER)
     quiz = gr.State({})
     with gr.Tabs() as tabs:
@@ -347,8 +349,7 @@ with gr.Blocks() as demo:
 
 
 demo.queue(default_concurrency_limit=5).launch(
+    show_api=False,
     server_name="0.0.0.0",
     allowed_paths=["/"],
-    theme=gr.themes.Soft(primary_hue="sky"),
-    css="footer{display:none !important}",
 )
